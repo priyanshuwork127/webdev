@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTOR 2</title>
+    <style>
+      /*  #main p{
+            color:aqua;
+        }
+        #inside p{
+            background-color:blue;
+        }
+        #main > p{                               /*Child selector*/
+          /*  background-color:black;
+    /*  }
+    /*  #main + p{
+            background-color:rgb(84, 20, 145);         Next sibling selector*/
+    /*  #main ~ p{
+            background-color:rgb(137, 192, 86);        /*next+subsequent selector*/
+    /*  } 
+        /*STYLE FOR A SPECIAL STATE OF ELEMENT*/
+    /*  a:link{
+            text-decoration: none;font-size:20px;
+        }
+    /* a:hover{
+            color:greenyellow;font-size:25px;
+        }
+    /* a:active{
+            color:yellow;font-size:30px;
+        }
+    /* a:visited{
+            color:black;
+        }*/
+        #main .a{         
+            color:red;
+        }
+        #main p:nth-child(even){
+            color:blue;
+        }
+        /* style a specific part of an element */
+        #main p:nth-child(even)::first-letter{
+            color:white;
+        }
+        #main p::first-line{
+            background-color:aquamarine;
+        }
+        #main p::before{
+            content: "Starting";
+            color:BLUE;
+            font-size:30px;
+        }
+        #main p::after{
+            content: "Read more";
+            color:red;
+            font-size:20px;
+        }
+    </style>
+</head>
+<body>
+    <!--CSS COMBINATOR-->
+    <div id="main">  <!--Div first-->
+        <p class="a">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam necessitatibus officia eligendi non sunt aspernatur autem beatae labore rem. Error temporibus obcaecati tenetur neque possimus animi voluptate iure velit dolor?</p>   <!--direct child of main-->
+        <p class="b">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi deserunt numquam incidunt minus illo nihil hic delectus eligendi blanditiis sunt, natus labore aperiam alias sit possimus error voluptatum officiis veritatis.</p>
+        <p class="a">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate rem minus vero quaerat illo odio. Magnam iure doloremque nostrum veritatis ex sunt perferendis, adipisci autem mollitia, laudantium reprehenderit exercitationem culpa!
+        </p>
+        <p class="b">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ex provident animi earum laudantium ut dolores, recusandae, fugit, libero amet modi excepturi porro deleniti repellat temporibus blanditiis corrupti unde dolorum.</p>
+        <div id="inside">   <!--INSIDE DIV-->    
+            <p>Fuga, iste. Tempore, id? Odit facilis exercitationem officia dolorem aut, reiciendis nobis autem, illum eum corporis tenetur non earum eveniet, voluptates amet!</p>     <!--Indirect child of main-->
+        </div>  <!--INSIDE DIV END-->
+    </div>   <!--Div first end-->
+    <p>     <!--next sibling for div first-->
+        Vero ea repellendus iure sint aperiam. Enim alias iusto, a incidunt aut recusandae, id quia veritatis in quidem natus provident, eius at.
+    </p>
+    <a href="Timetable.html">visit my page</a>   <!--SUBSEQUENT SIBLING-->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint rerum itaque alias nemo quia unde, ipsam reiciendis repellendus numquam expedita id est, vitae sapiente. Laboriosam labore dignissimos cumque nostrum ipsam?</p>
+</body>
+</html>
