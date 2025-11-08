@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model 3</title>
+    <style>
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        #main{
+            width:300px;
+            height:320px;
+            background-color: aqua;
+            border:0px solid;
+            display: flex;
+            flex-direction: column;
+        }
+        #header{
+            width:290px;
+            height:60px;
+            background:orange;
+            border:0px solid;
+            margin:5px;
+        }
+        #nav{
+            width:290px;
+            height:60px;
+            background:rgb(117, 4, 121);
+            border:0px solid;
+            margin:5px;
+        }
+        #main2{
+            height:130px;
+            width:290px;
+            background-color:aqua;
+            margin:5px;
+            display: flex;
+        }
+        #left{
+            height:130px;
+            width:145px;
+            background-color:aqua;
+            margin-right:5px;
+            border:0px solid;
+        }
+        .lft{
+            height:60px;
+            width:145px;
+            background-color:rgb(54, 42, 122);
+            margin-top:5px;
+            border:0px solid;
+        }
+        .lft:nth-child(1){
+            background-color: grey;
+        }
+        #right{
+            height:125px;
+            width:145px;
+            background-color:orange;
+            margin-top:5px;
+            margin-bottom:0px;
+            border:0px solid;
+
+        }
+        #footer{
+            height:60px;
+            width: 290px;
+            background-color:rgb(77, 19, 104);
+            margin:5px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="header" align="center"><h1>header</h1></div>
+        <div id="nav" align="center"><H1>nav</H1></div>
+        <div id="main2">
+            <div id="left">
+                <div class="lft" align="center"><h1>section</h1></div>
+                <div class="lft" align="center"><h1>article</h1></div>
+            </div>
+            <div id="right" align="center"><h1>aside</h1></div>
+        </div>
+        <div id="footer" align="center"><h1>footer</h1></div>
+    </div>
+</body>
+</html>
