@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model 2</title>
+    <style>
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        #main{
+            width:900px;
+            height:380px;
+            background-color:rgb(71, 75, 73);
+            border:0px solid;
+            display:flex;
+        }
+        #left{
+            width:400px;
+            height:380px;
+        /*    margin-right:20px; */
+            background-color: rgb(100, 112, 100);
+        }
+        #right{
+            width:480px;
+            height:380px;
+            background-color: rgb(198, 219, 212);
+            margin-left:20px;
+            
+        }
+        .rgt{
+            width:480px;
+            height:180px;
+            background-color: red;
+        }
+        .rgt:nth-child(2){
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <div id="left">
+
+        </div>
+        <div id="right">
+            <div class="rgt"></div>
+            <div class="rgt"></div>
+        </div>
+    </div>
+
+</body>
+</html>
