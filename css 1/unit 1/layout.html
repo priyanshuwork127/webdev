@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex layout</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        main{
+            width:auto;
+            height:auto;
+            background-color: rgb(94, 87, 87);
+            margin:0 auto;
+            display:flex;
+            gap:10px;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            align-items:center;
+            align-content: center;
+        }
+        .box{
+            width:300px;
+            height:350px;
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+    </main>
+    
+</body>
+</html>
