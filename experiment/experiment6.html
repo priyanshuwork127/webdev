@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPERIMENT 6</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+        }
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        #main{
+            height:460px;
+            width:830px;
+            border-color: black;
+            border:2px solid;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: rgb(148, 187, 187);
+        }
+        #top{
+            height:50pxpx;
+            width:815px;
+            border-color: black;
+            border:2px solid;
+            margin:5px;
+            text-align: center;
+        }
+        #main1{
+            height:400px;
+            width:815px;
+            border-color: black;
+            border:2px solid;
+            display:flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin:5px;
+        }
+        img{
+            display: inline;
+        }
+        #left{
+            height:400px;
+            width:395px;
+            background-color: rgb(148, 187, 187);
+            margin:5px;
+            text-align: center;
+            border: 1px solid;
+            align-content: center;
+        }
+        #right{
+            height:400px;
+            width:395px;
+            background-color: rgb(148, 187, 187);
+            margin:5px;
+        }
+        #offer{
+            width:395px;
+            height:60px;
+            margin:5px;
+            background-color: rgb(148, 187, 187);
+            display: flex;
+        }
+        #credit{
+            width:190px;
+            height:120px;
+            margin:5px;
+            background-color: rgb(117, 197, 197);
+            border: 2px dotted;
+        }
+        #bank{
+            width:190px;
+            height:120px;
+            margin:5px;
+            background-color: rgb(117, 197, 197);
+            border: 2px dotted;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top"><h2><b>Tech mart</b></h2></div>    
+        <div id="main1">
+            <div id="left">
+                <img alt="image" src="images-fotor-bg-remover-2025112822955.png" width="391px" height="295px" >
+                <a href="https://unsplash.com/s/photos/laptop">Click for more images</a>
+            </div>
+            <div id="right">
+                <div id="intro">
+                    <br><br>
+                    <p>HP 15, AMD Ryzen 5 7520U,(16GB DDR5, 512GB SSD), Anti-Glare, Micro-Edge, FHD, 15.6''/39.6cm, Win 11, Office 21, Silver, 1.59kg, fc0690au, AMD Radeon Graphics, FHD Camera, Backlit KB Laptop</p>
+                    <a href="https://www.amazon.in/stores/HP/page/DC0D6D54-3324-4C73-9E66-863A76269836?lp_asin=B0CY2PLQ8N&ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto">Visit store for more info</a>
+                    <br><br>
+                </div>
+                <hr><hr>
+                <div id="price">
+                    <h3>&#8377<del>50,999</del></h3>
+                    <h2>&#8377 48,999</h2>
+                </div>
+                <hr><hr>
+                <button style="width:395px;height:25px;">Add to cart</button>
+                <div id="offer">
+                    <div id="credit">
+                        <h6>Bank offer</h6>
+                        <p>upto &#8377 3,999 discount on selected credit cards</p>
+                        <label for="credit cards"></label>
+                        <select id="credit cards" name="credit cards" >
+                            <option value="Select your card">Select your card</option>
+                            <option value="SBI CARD">SBI CARD</option>
+                            <option value="HDFC CARD">HDFC CARD</option>
+                            <option value="PNB CARD">PNB CARD</option>
+                        </select>
+                    </div>
+                    <div id="bank">
+                        <h3>No cost EMI</h3>
+                        <P>upto &#8377 1,465 cashback at pay balance</P>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
