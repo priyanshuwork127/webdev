@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout 2</title>
+    <style>
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+        }
+        main{
+            width:1200px;
+            height:auto;
+            background-color: rgb(79, 82, 82);
+            display: grid;
+            grid-template-row: 80px 80px 150px 80px ;
+            gap:5px;
+        }
+        .b{
+            background-color: rgb(113, 128, 122);
+        }
+        .b:nth-child(3){
+            width:1200px;
+            height:240px;
+            display:grid;
+            grid-template-columns:200px auto 200px;
+            gap:5px;
+        }
+        .b1{
+            background-color:rgb(192, 255, 230);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="b">header</div>
+        <div class="b">navigation menu</div>
+        <div class="b">
+            <div class="b1">content</div>            
+            <div class="b1">main content</div>            
+            <div class="b1">content</div>            
+        </div>
+        <div class="b">footer</div>
+    </main>
+</body>
+</html>

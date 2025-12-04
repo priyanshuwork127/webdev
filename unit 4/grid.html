@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout</title>
+    <style>
+        html,*{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+        }
+        main{
+            width:1200px;
+            height:auto;
+            background-color: rgb(120, 122, 124);
+            margin:0 auto;
+            display: grid;
+           /* grid-template-columns: 200px 300px 400px auto; */
+           /* grid-template-columns: repeat(4,1fr);  repeating equal element*/
+            grid-template-rows: 150px 80px 500px 200px;
+            gap:20px;
+        }
+        .box{
+            background-color: rgb(158, 197, 184);
+            height:300px;
+        }
+      /*  @media screen and (max-width:768px){
+            main{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:20px;
+            } */
+        @media screen and (min-width:375px) and (max-width:768px){
+            main{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box" id="box1">
+            <div class="rl">right</div>
+            <div class="rl">left</div>
+        </div>
+        <div class="box">4</div>
+    </main>
+    
+</body>
+</html>
