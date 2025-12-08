@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABES ENGINEERING COLLEGE</title>
+    <style>
+        body{
+            margin:0px;
+            padding:0px;
+            box-sizing:border-box;
+            background-color: rgb(199, 199, 199);
+        }
+        html,*{
+            margin:0px;
+            padding:opx;
+        }
+        header{
+            height:300px;
+            width:auto;
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(217, 243, 243);
+            text-align: center;
+            display: block;
+        }
+        @media(max-width:900px) and (min-width: 600px){
+            header{
+                display: grid;
+                grid-template-columns: 1fr;
+                
+                text-align: center;
+            }
+            nav{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+        @media(max-width:600px) and (min-width:10px){
+            header{
+                display: grid;
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            header img {
+                margin: 0 auto;
+            }
+            nav {
+                grid-template-columns: 1fr; 
+            }
+            nav a {
+                 width: 100%;
+                 margin: 5px 0;
+            }
+
+
+        }
+
+
+
+
+        img{
+            height:200px;
+            width:220px;
+        }
+        h1{
+            font-weight: 2000;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin:auto;
+            
+        }
+        nav{
+            width:auto;
+            height:100px;
+            background-color: rgb(115, 122, 122);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        a:active{
+            background-color: rgb(130, 130, 172);
+            color:red;
+        }
+        a{
+            background-color: rgb(255, 255, 255);
+            text-decoration: rgb(0, 0, 0);
+            margin:auto;
+        }
+        a:hover{
+            background-color: rgb(188, 214, 214);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <img src="download.png" alt="logo" >
+            <h1><B><U>E-COMMERCE</U></B></h1>
+        </header>
+        <hr><hr>
+        <nav>
+            <a href="#SN">SIGN IN</a>
+            <a href="#TD">TRENDING</a>
+            <a href="#RL">NEW RELEASE</a>
+            <a href="#CT">CATAGORIES</a>
+            <a href="#TD">TODAY'S DEALS</a>
+            <a href="#PL">PLACEMENTS</a>
+            <a href="#PR">PRIME</a>
+            <a href="#EC">SELL ON E-COMMERCE</a>
+        </nav>
+        <section id="SN"></section>
+        <section id="TD"></section>
+        <section id="RL"></section>
+        <section id="CT"></section>
+        <section id="TD"></section>
+        <section id="PL"></section>
+        <section id="PR"></section>
+        <section id="EC"></section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>experiment 9</title>
+  <style>
+    html, * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin: 20px;
+    }
+
+    /* Tablet view */
+    @media (max-width: 900px) and (min-width: 600px) {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile view */
+    @media (max-width: 600px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      .product {
+        width: 100%;
+      }
+      .left img, iframe, video {
+        width: 100%;
+        height: auto;
+      }
+      button {
+        width: 100%;
+      }
+    }
+
+    .product {
+      border: 2px solid black;
+      background-color: rgb(148, 187, 187);
+      padding: 10px;
+    }
+    .left {
+      text-align: center;
+    }
+    .left img {
+      width: 100%;
+      height: auto;
+      border: 1px solid #000;
+    }
+    .right {
+      margin-top: 10px;
+    }
+    .price h3 {
+      color: gray;
+    }
+    .price h2 {
+      color: darkgreen;
+    }
+    .offer {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .credit, .bank {
+      flex: 1;
+      background-color: rgb(117, 197, 197);
+      border: 2px dotted;
+      padding: 5px;
+    }
+    button {
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main>
+
+    <div class="product">
+      <div class="left">
+        <img src="images-fotor-bg-remover-2025112822955.png" alt="Laptop">
+        <a href="https://unsplash.com/s/photos/laptop">Click for more images</a>
+      </div>
+      <div class="right">
+        <p>HP 15, AMD Ryzen 5 7520U, (16GB DDR5, 512GB SSD), Anti-Glare, Micro-Edge, FHD, 15.6''/39.6cm, Win 11, Office 21, Silver, 1.59kg, fc0690au, AMD Radeon Graphics, FHD Camera, Backlit KB Laptop</p>
+        <a href="https://www.amazon.in/stores/HP/page/DC0D6D54-3324-4C73-9E66-863A76269836?lp_asin=B0CY2PLQ8N">Visit store for more info</a>
+        <hr>
+        <div class="price">
+          <h3>&#8377;<del>50,999</del></h3>
+          <h2>&#8377;48,999</h2>
+        </div>
+        <hr>
+        <button>Add to cart</button>
+        <div class="offer">
+          <div class="credit">
+            <h6>Bank offer</h6>
+            <p>Upto &#8377;3,999 discount on selected credit cards</p>
+            <select>
+              <option>Select your card</option>
+              <option>SBI CARD</option>
+              <option>HDFC CARD</option>
+              <option>PNB CARD</option>
+            </select>
+          </div>
+          <div class="bank">
+            <h3>No cost EMI</h3>
+            <p>Upto &#8377;1,465 cashback at pay balance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="product">
+      <div class="left">
+        <img src="images-fotor-bg-remover-2025112822955.png" alt="Laptop">
+        <a href="https://unsplash.com/s/photos/laptop">Click for more images</a>
+      </div>
+      <div class="right">
+        <p>HP 15, AMD Ryzen 5 7520U, (16GB DDR5, 512GB SSD)...</p>
+        <a href="https://www.amazon.in/stores/HP/page/DC0D6D54-3324-4C73-9E66-863A76269836?lp_asin=B0CY2PLQ8N">Visit store for more info</a>
+        <hr>
+        <div class="price">
+          <h3>&#8377;<del>50,999</del></h3>
+          <h2>&#8377;48,999</h2>
+        </div>
+        <hr>
+        <button>Add to cart</button>
+        <div class="offer">
+          <div class="credit">
+            <h6>Bank offer</h6>
+            <p>Upto &#8377;3,999 discount on selected credit cards</p>
+            <select>
+              <option>Select your card</option>
+              <option>SBI CARD</option>
+              <option>HDFC CARD</option>
+              <option>PNB CARD</option>
+            </select>
+          </div>
+          <div class="bank">
+            <h3>No cost EMI</h3>
+            <p>Upto &#8377;1,465 cashback at pay balance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="left">
+        <img src="images-fotor-bg-remover-2025112822955.png" alt="Laptop">
+        <a href="https://unsplash.com/s/photos/laptop">Click for more images</a>
+      </div>
+      <div class="right">
+        <p>HP 15, AMD Ryzen 5 7520U, (16GB DDR5, 512GB SSD)...</p>
+        <a href="https://www.amazon.in/stores/HP/page/DC0D6D54-3324-4C73-9E66-863A76269836?lp_asin=B0CY2PLQ8N">Visit store for more info</a>
+        <hr>
+        <div class="price">
+          <h3>&#8377;<del>50,999</del></h3>
+          <h2>&#8377;48,999</h2>
+        </div>
+        <hr>
+        <button>Add to cart</button>
+        <div class="offer">
+          <div class="credit">
+            <h6>Bank offer</h6>
+            <p>Upto &#8377;3,999 discount on selected credit cards</p>
+            <select>
+              <option>Select your card</option>
+              <option>SBI CARD</option>
+              <option>HDFC CARD</option>
+              <option>PNB CARD</option>
+            </select>
+          </div>
+          <div class="bank">
+            <h3>No cost EMI</h3>
+            <p>Upto &#8377;1,465 cashback at pay balance</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
